@@ -77,7 +77,7 @@ for (let i = 0; i < 20; i++) {
 
 const data = JSON.stringify(people, null, 2);
 
-fs.writeFile('test.json', data, (err) => {
+fs.writeFile('people.json', data, (err) => {
   if (err) throw console.log('Something went wrong');
   console.log('The file has been successfully generated!');
 });
